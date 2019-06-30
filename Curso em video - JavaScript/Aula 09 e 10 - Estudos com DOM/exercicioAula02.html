@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div#area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="area">
+        Vamos com o menino DOM
+
+    </div>
+
+    <script>
+        var a = documen.querySelector('div#area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+        function clicar() {
+            a.style.background = 'blue'
+            a.innerText = 'Cliquei'
+        }
+        function entrar() {
+            a.innerText = 'entrou'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        function saiu() {
+            a.innerText = 'saiu'
+            a.style.background = 'red'
+        }
+    
+    </script>
+</body>
+</html>
