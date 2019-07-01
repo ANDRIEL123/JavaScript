@@ -8,12 +8,35 @@ header {
 
 }
 
+#horaatual{
+    text-align: center;
+    font: times;
+    font-size: 20px;
+    color: white;
+}
+
 section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
     margin: auto;
+    width: 500px;
+    margin-top: 20px;
+}
+
+#periodo {
+    color: black;
+    text-align: center;
+    font: times;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#imagem{
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
 }
 
 footer {
