@@ -1,0 +1,24 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+}
+
+body{
+    background: rgb(53, 189, 235);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+#entradas {
+    padding: 20px;
+    font-size: 20px;
+}
+
+#saida {
+    font-size: 30px;
+    color: white;
+}
