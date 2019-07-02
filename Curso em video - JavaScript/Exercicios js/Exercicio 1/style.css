@@ -10,10 +10,13 @@ header {
 
 }
 
+<<<<<<< HEAD
 #imgfundo {
     border-radius: 100px;
 }
 
+=======
+>>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
 #horaatual{
     text-align: center;
     font: times;
@@ -27,7 +30,11 @@ section {
     padding: 15px;
     margin: auto;
     width: 500px;
+<<<<<<< HEAD
     max-width: 100%;
+=======
+    margin-top: 20px;
+>>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
 }
 
 #periodo {
@@ -36,14 +43,23 @@ section {
     font: times;
     font-size: 20px;
     font-weight: bold;
+<<<<<<< HEAD
     padding: 10px;
+=======
+>>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
 }
 
 #imagem{
     text-align: center;
+<<<<<<< HEAD
     height: auto;
     width: auto;
     
+=======
+    padding: 20px;
+    height: auto;
+    width: auto;
+>>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
 }
 
 footer {

@@ -72,28 +72,28 @@ function geraFotoDinamica(y, sexo) {
     else if(y > 11 && y < 19 && sexo == 'Masculino') {
         img.src = '_imagens/adolescentemasculino.jpg'
     } else if (y > 11 && y < 19 && sexo == 'Feminino') {
-        img.src = '_imagens/adolescentefeminino.jpg'
+        img.src = '_imagens/adolescentesfeminino.jpg'
     }
-    else if(y > 18 && y < 30 && sexo == 'Masculino') {
+    else if(y > 18 && y < 36 && sexo == 'Masculino') {
         img.src = '_imagens/adultomasculino.jpg'
-    } else if (y > 18 && y < 30 && sexo == 'Feminino') {
+    } else if (y > 18 && y < 36 && sexo == 'Feminino') {
         img.src = '_imagens/adultofeminino.jpg'
     }
-    else if(y > 30 && y < 51 && sexo == 'Masculino') {
+    else if(y > 35 && y < 51 && sexo == 'Masculino') {
         img.src = '_imagens/experientemasculino.jpg'
-    } else if (y > 30 && y < 51 && sexo == 'Feminino') {
+    } else if (y > 35 && y < 51 && sexo == 'Feminino') {
         img.src = '_imagens/experientefeminino.jpg'
-    } 
+    }
     else if(y > 50 && y < 71 && sexo == 'Masculino') {
         img.src = '_imagens/velhomasculino.jpg'
     } else if (y > 50 && y < 71 && sexo == 'Feminino') {
         img.src = '_imagens/velhofeminino.jpg'
-    } 
+    }
     else if(y > 70 && sexo == 'Masculino') {
         img.src = '_imagens/bemvelhomasculino.jpg'
     } else if (y > 70 && sexo == 'Feminino') {
         img.src = '_imagens/bemvelhofeminino.jpg'
-    } 
+    }
     
 }
 
