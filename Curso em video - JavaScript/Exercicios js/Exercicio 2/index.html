@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Idade</title>
+</head>
+<body>
+    
+    <header>
+        <h2> Verificação automatica de idade </h2>
+        
+    </header>
+
+    <section>
+        <div id="entradas">
+            <p>Digite sua data de nascimento:
+            <input type="date" name="data" id="data" ><br>
+            </p>
+
+            <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" id="buttonok" onclick="verificaIdade()"></p>
+            
+        </div>
+        <div id="saida"></div>
+        <p><img id="foto" style = "width: 300px"></p>
+    </section>
+
+    <footer>
+        <p> &copy; Andriel Friedrich</p>
+
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    background: rgb(53, 189, 235);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    background: white;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+#entradas {
+    padding: 20px;
+    font-size: 20px;
+    
+    margin: auto;
+}
+
+#saida {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    color: black;
+}
+
+#data {
+    font-size: 17px;
+}
+
+#buttonok{
+    font-size: 17px;
+}
