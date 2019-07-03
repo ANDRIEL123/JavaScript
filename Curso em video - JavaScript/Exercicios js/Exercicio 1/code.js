@@ -12,11 +12,7 @@ function time() {
     hformatado = formataHora(h)
     var m = today.getMinutes() //ESCOPO GLOBAL VAR
     mformatado = formataHora(m)
-<<<<<<< HEAD
     var s = today.getSeconds()//ESCOPO GLOBAL VAR 
-=======
-    var s = today.getSeconds() //ESCOPO GLOBAL VAR
->>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
     sformatado = formataHora(s)
     var hora = document.getElementById('horaatual') //ESCOPO GLOBAL VAR
     hora.innerHTML = hformatado+":"+mformatado+":"+sformatado
@@ -50,13 +46,9 @@ function verificaPeriodo(h, m, s) {
         imagem.src = "_imagens/boatarde.jpg"
         
     } else {
-<<<<<<< HEAD
         if(h== 18 && m == 0 && s == 0){
             location.reload()
         }
-=======
-        if(h == 18 && m == 0 && s == 0)
->>>>>>> 2cc6266332e6e59e76d194ef56756f2d18a44ba6
         hora.innerHTML = 'Agora é noite!'
         document.body.style.background = "url('_imagens/noite.jpg')"
         imagem.src = "_imagens/boanoite.jpg"
