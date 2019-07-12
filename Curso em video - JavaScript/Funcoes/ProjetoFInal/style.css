@@ -1,0 +1,17 @@
+* {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+
+#valores {
+    background: rgba(171, 234, 255, 0.678);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+select {
+    width: 300px;
+}
