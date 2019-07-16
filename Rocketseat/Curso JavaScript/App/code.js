@@ -9,6 +9,7 @@ var todos = [
 ];
 
 function atualizaLista () {
+    listaElement.innerHTML = ''
     for (i = 0; i < todos.length; i++) {
         var outputLista = document.createElement('output')
         outputLista.innerHTML = `<li> ${todos[i]}</li>`
@@ -16,6 +17,12 @@ function atualizaLista () {
         var linkElement = document.createElement('a')
         var linkText = document.createTextNode('Excluir')
         linkElement.setAttribute('href', '#')
+
+
+        linkElement.onclick = function () {
+            todos.splice(linkElement, 1)
+            atualizaLista()
+        }
 
         linkElement.appendChild(linkText)
 
@@ -34,7 +41,3 @@ buttonElement.onclick =  function  () {
     atualizaLista ()
 }
 
-function deleteItemLista (pos) {
-    todos.splice()
-    atualizaLista()
-}
