@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="txt-nome" id="txt-nome">
+        <input type="button" id="clique" value="Clicar">
+    </div>
+
+    <script>
+        var nome = document.querySelector('input#txt-nome')
+        var btnElement = document.getElementById('clique')
+        btnElement.onclick = function () {
+            var text = nome.value
+            alert(`Botão clicado nome = ${text}`)
+        }
+
+        
+    </script>
+</body>
+</html>
