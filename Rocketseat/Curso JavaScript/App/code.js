@@ -2,11 +2,7 @@ var listaElement = document.querySelector('#app ul')
 var inputElement = document.querySelector('input#inputadd')
 var buttonElement = document.querySelector('input#adiciona')
 
-var todos = [
-    'Fazer café',
-    'Estudando JS',
-    'Passar na faculdade amém'
-];
+var todos = JSON.parse(localStorage.getItem('list_todos'))
 
 function atualizaLista () {
     listaElement.innerHTML = ''
@@ -29,6 +25,7 @@ function atualizaLista () {
         listaElement.appendChild(outputLista)
 
         listaElement.appendChild(linkElement)
+        saveToStorage()
     }
 }
 
@@ -39,5 +36,9 @@ buttonElement.onclick =  function  () {
     todos.push(input)
     inputElement.value = ''
     atualizaLista ()
+    saveToStorage()
 }
 
+function saveToStorage() {
+    localStorage.setItem('list_todos', JSON.stringify(todos))
+}
