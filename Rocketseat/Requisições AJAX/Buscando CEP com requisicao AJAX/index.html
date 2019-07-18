@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax com JS Puro</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+</head>
+
+<body>
+    <div>
+        <h2>Buscando CEP com requisição AJAX</h2>
+    </div>
+
+    <form class="o-form">
+        <div id="geralForm">
+        <div id="cep">
+            <label>CEP</label>
+            <p><input type="text" name="cep" class="cep"></p>
+        </div>
+
+        <div id="endereco">
+            <label>Endereço</label>
+            <p><input type="text" id="endereco" size="100"></p>
+        </div>
+
+        <div id="numero">
+            <label>Número</label>
+            <p><input type="number" id="numero"></p>
+        </div>
+
+        <div id="bairro">
+            <label>Bairro</label>
+            <p><input type="text" id="bairro"></p>
+        </div>
+
+        <div id="complemento">
+            <label>Complemento</label>
+            <p><input type="text" id="complemento"></p>
+        </div>
+
+        <div id="cidade">
+            <label>Cidade</label>
+            <p><input type="text" id="cidade"></p>
+        </div>
+
+        <div id="estado">
+            <label>Estado</label>
+            <p><input type="text" id="estado"></p>
+        </div>
+
+    </div>
+    </form>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="js/mascara.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+* {
+    max-width: 100%; 
+}
+
+h2 {
+    text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+input {
+    font-size: 15px;   
+}
+
+#geralForm, div#cep, div#endereco, div#numero, div#bairro, div#complemento, div#cidade, div#estado
+ { float: left; padding: 10px; background-color: rgb(156, 201, 104);
+   border-radius: 50px;}
+
+ #geralForm {
+     margin-right: auto;
+     margin-left: auto;
+     padding: 10px;
+     font-weight: bold;
+     max-width: 100%;
+ }
+
+
+
