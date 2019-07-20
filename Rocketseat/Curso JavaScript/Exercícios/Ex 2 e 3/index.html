@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="user" id="user">
+    <button onclick="trazDadosDoGit()">Buscar</button>
+    <ul id="listaDeInformacoes"></ul>
+
+    <script src="axios.min.js"></script>
+    <script>
+        var lista = document.querySelector('ul#listaDeInformacoes')
+
+        function trazDadosDoGit() {
+            var user = document.querySelector('input#user').value
+            var newElementTmp = document.createElement('li')
+            var txtElementTmp = document.createTextNode('Carregando...')
+
+            newElementTmp.appendChild(txtElementTmp)
+            lista.appendChild(newElementTmp)
+
+            axios.get(`https://api.github.com/users/${user}/repos`)
+                .then(function (response) {
+                    console.log(response.data)
+                    newElementTmp.remove()
+                    atualizaRepositorio(response.data)
+
+                })
+                .catch(function (error) {
+                    alert('Erro 404')
+                    console.warn(error);
+
+                })
+        }
+
+        function atualizaRepositorio(repositorios) {
+            for (repo of repositorios) {
+                var newElement = document.createElement('li')
+                let txtElement = document.createTextNode(repo.name)
+
+                newElement.appendChild(txtElement)
+                lista.appendChild(newElement)
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
