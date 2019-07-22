@@ -1,0 +1,15 @@
+{
+  "name": "jses6",
+  "version": "0.0.1",
+  "description": "Js",
+  "main": "js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o bundle.js -w"
+  }
+}
