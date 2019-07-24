@@ -1,0 +1,78 @@
+* {
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+section{
+    text-align: center;
+    background: rgb(205, 255, 253);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div#geralzona, div#id, div#nome, div#valor, div#observacao, div#grupo {
+    float: left;
+    padding: 15px;
+}
+
+input#adiciona {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input#adiciona:hover {
+    background: rgb(202, 193, 193);
+    
+}
+
+table#tblgeral {
+    width: 60em;
+}
+
+#tblgeral {
+    border-collapse: collapse;
+    width: 60em;
+    background: lightgray;
+    max-width: 100%;
+    visibility: hidden;
+    
+}
+
+thead{
+    
+}
+
+div#tabela {
+    overflow: auto;  /* COLOCA BARRA DE ROLAGEM */
+    width: 62em;
+    height: 300px; /* LIMITA A ALTURA DA TABLE */
+    max-width: 100%;
+    margin: auto;
+}
+
+tr#LinhaDescricao{
+    font-weight: bold; 
+    background: rgb(102, 94, 94); 
+    
+}
+
+footer {
+    margin-top: 10px;
+}
+
+tr:hover {
+    background: rgb(158, 146, 146);
+}
+
+table, td, th {
+    border: solid 1px;
+    border-collapse: collapse;
+}
+

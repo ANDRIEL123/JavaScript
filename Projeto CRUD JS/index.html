@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>CRUD Produtos</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h2>Cadastro de Produtos</h2>
+        </div>
+    </header>
+
+    <section>
+    <div id="geralzona">
+        <div id="id">
+            <label>ID</label>
+            <p>
+                <input type="number" name="id" id="id" size="10px">
+            </p>
+        </div>
+        <div id="nome">
+            <label>Nome</label>
+            <p>
+                <input type="text" name="nome" id="nome">
+            </p>
+        </div>
+        <div id="valor">
+            <label>Preço</label>
+            <p>
+                <input type="number" name="valor" id="valor">
+            </p>
+        </div>
+        <div id="observacao">
+            <label>Observação</label>
+            <p>
+                <input type="text" name="observacao" id="observacao" size="50px">
+            </p>
+        </div>
+
+        <div id="grupo">
+                <label>Grupo</label>
+                <p>
+                    <input type="number" name="grupo" id="grupo">
+                </p>
+        </div>  
+    </div>
+    <div id="adicionar">
+            <input type="button" value="Adicionar" id="adiciona">
+    </div>
+
+    </section>
+
+    <footer>
+        <div id="tabela">
+                <table id="tblgeral">
+                    <div id="tblhead">
+                    <thead>
+                    <tr id="LinhaDescricao">
+                        <td>ID</td>
+                        <td>Nome</td>
+                        <td>Preço</td>
+                        <td>Observação</td>
+                        <td>Grupo</td>
+                    </tr>
+                    </thead>
+                    </div>
+                    <div id="tblbody">
+                    <tbody id="tblprod"></tbody>
+                    </div>
+                   
+                </table>
+        </div>
+    </footer>
+    <script src="_js/code.js"></script>
+</body>
+
+</html>
