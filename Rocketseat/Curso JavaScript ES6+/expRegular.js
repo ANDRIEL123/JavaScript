@@ -1,5 +1,16 @@
-var url = 'https://www.animesroll.com/a/4I3NsZ5rNs'
+// Expressão regular
+var minha_expressao = /[0-9]/g;
 
-var regExpression = /animesroll/
+// Variável do tipo string
+var minha_string = 'ABCD 0123456789';
 
-console.log(regExpression.exec(url))
+console.log( minha_string.replace( minha_expressao, '#' ) );
+// Resultado: ABCD ##########
+
+var url = 'runebrazuka@hotmail.com.br'
+
+
+var esseExp = /^[a-z]*@[a-z]*.[a-z]*/
+
+console.log(esseExp.exec(url))
+
