@@ -5,9 +5,9 @@ const arr = [1, 2, 3, 4, 5]
 let adiciona = arr.map(item => item + 10)
 console.log(adiciona)
 
-const usuario = { nome: 'Andriel', idade: 22}
-
 /*     MOSTRA IDADE   */
+
+const usuario = { nome: 'Andriel', idade: 22}
 
 //FUNCAO TRADICIONAL
 function mostraIdade(usuario) {
@@ -29,7 +29,6 @@ const mostraUsuario = (nome, idade) => {
 }
 
 console.log(mostraUsuario(nome, idade))
-
 
 //--------------------------------------------------//
 const promise = function() {
