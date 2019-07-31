@@ -1,0 +1,17 @@
+{
+  "name": "andriel",
+  "version": "0",
+  "description": "config",
+  "main": "index.js",
+  "repository": "index.html",
+  "author": "andriel",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "scripts": {
+    "dev": "webpack --mode=development -w"
+  }
+}
