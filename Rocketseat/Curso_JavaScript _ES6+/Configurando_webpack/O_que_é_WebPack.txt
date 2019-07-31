@@ -1,0 +1,9 @@
+webpack (com “w” minúsculo, respeitando a grafia do site oficial) 
+é um empacotador de código para projetos web, como o browserify. 
+O que ele se propõe a fazer de diferente é focar em módulos da sua aplicação.
+
+Ou seja ele separa os módulos assim podendo importar e exportar as funções,
+imagem e outras coisas de outros arquivos.
+
+Um exemplo é o do arquivo funcoes.js que contém a função soma que é importada
+para o arquivo index.js.
