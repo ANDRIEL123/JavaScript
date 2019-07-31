@@ -1,0 +1,7 @@
+No terminal com o YARN e o NODE instalados proceder conforme abaixo:
+
+Executar o comando: yarn add webpack webpack-cli -D //INSTALA WEBPACK e WEBPACK-CLI
+Executar o comando: yarn add babel-loader -D //INSTALA BABEL LOADER
+
+Testa e executa o webpack com 'yarn dev', demais configurações estão em
+webpack.config.js e package.json.
