@@ -1,15 +1,9 @@
 const express = require('express')
-
 const routes = express.Router()
 
-routes.get('/', (req, res) => {
-    /*Product.create({
-        title: 'React Native',
-        description: 'TESTE NODE',
-        url: 'gamemaster.netlify.com'
+const ProductController = require('./controllers/ProductController')
 
-    })*/
-    return res.send('Hello World 2!')
-})
+
+routes.get('/products', ProductController.index)
 
 module.exports = routes
