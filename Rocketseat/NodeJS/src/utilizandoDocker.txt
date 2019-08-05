@@ -1,0 +1,5 @@
+Instalar o mongodb utilizando o Docker:
+
+sudo apt-get install docker.io
+
+docker pull mongodb
