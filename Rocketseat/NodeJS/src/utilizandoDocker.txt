@@ -2,4 +2,7 @@ Instalar o mongodb utilizando o Docker:
 
 sudo apt-get install docker.io
 
-docker pull mongodb
+docker pull mongodb //BAIXO IMAGEM MONGODB
+
+// CRIO CONTEINER E DIRENCIONA PORTA 27017 DO MONGO PARA MINHA PORTA 27017 DA MÁQUINA
+docker run --name mongodb -p 27017:27017 -d mongo 
