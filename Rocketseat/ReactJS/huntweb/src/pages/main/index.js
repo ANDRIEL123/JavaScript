@@ -5,17 +5,41 @@ import './styles.css'
 export default class Main extends Component {
     state = {
         products: [],
+        productsInfo: {},
+        page: 1,
     }
 
     componentDidMount() {
         this.loadProducts();
     }
 
-    loadProducts = async () => {
-        const response = await api.get('/products');
+    loadProducts = async (page = 1) => {
+        const response = await api.get(`/products?page=${page}`);
 
-        this.setState({ products: response.data.docs })
+        const { docs, ...productInfo } = response.data
 
+        this.setState({ products: docs, productInfo, page })
+
+    }
+
+    prevPage = () => {
+        const { page, productsInfo } = this.state
+
+        if (page === 1) return;
+
+        const pageNumber = page - 1
+
+        this.loadProducts(pageNumber)
+    }
+
+    nextPage = () => {
+        const { page, productsInfo } = this.state
+
+        if (page === productsInfo.pages) return;
+
+        const pageNumber = page + 1
+
+        this.loadProducts(pageNumber)
     }
 
     render() {
@@ -29,7 +53,10 @@ export default class Main extends Component {
                         <a href="#">Acessar</a>
                     </article>
                 ))}
-
+                <div className='actions'>
+                    <button onClick={this.prevPage}>Anterior</button>
+                    <button onClick={this.nextPage}>Próxima</button>
+                </div>
 
             </div>
         )
