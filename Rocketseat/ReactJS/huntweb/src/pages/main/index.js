@@ -3,6 +3,7 @@ import api from '../../services/api'
 import './styles.css'
 
 export default class Main extends Component {
+
     state = {
         products: [],
         productsInfo: {},
@@ -15,7 +16,7 @@ export default class Main extends Component {
 
     loadProducts = async (page = 1) => {
         const response = await api.get(`/products?page=${page}`);
-        console.log(response.data)
+
         const { docs, ...productInfo } = response.data
 
         this.setState({ products: docs, productInfo, page })
@@ -23,7 +24,7 @@ export default class Main extends Component {
     }
 
     prevPage = () => {
-        const { page, productsInfo } = this.state
+        const { page } = this.state
 
         if (page === 1) return;
 
@@ -38,13 +39,14 @@ export default class Main extends Component {
         if (page === productInfo.pages) return;
 
         const pageNumber = page + 1
-
+        console.log(productInfo.pages)
         this.loadProducts(pageNumber)
     }
 
 
     render() {
-        const { products, page } = this.state
+        const { page, productInfo } = this.state
+        console.log(productInfo)
         return (
             <div className='product-list'>
                 {this.state.products.map(product => (
@@ -56,7 +58,7 @@ export default class Main extends Component {
                     </article>
                 ))}
                 <div className='actions'>
-                    <button disable={page === 1} onClick={this.prevPage}>Anterior</button>
+                    <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
                     <button onClick={this.nextPage}>Próxima</button>
                 </div>
 
