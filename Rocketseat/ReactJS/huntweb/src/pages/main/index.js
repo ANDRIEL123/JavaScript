@@ -15,7 +15,7 @@ export default class Main extends Component {
 
     loadProducts = async (page = 1) => {
         const response = await api.get(`/products?page=${page}`);
-
+        console.log(response.data)
         const { docs, ...productInfo } = response.data
 
         this.setState({ products: docs, productInfo, page })
@@ -33,16 +33,18 @@ export default class Main extends Component {
     }
 
     nextPage = () => {
-        const { page, productsInfo } = this.state
+        const { page, productInfo } = this.state
 
-        if (page === productsInfo.pages) return;
+        if (page === productInfo.pages) return;
 
         const pageNumber = page + 1
 
         this.loadProducts(pageNumber)
     }
 
+
     render() {
+        const { products, page } = this.state
         return (
             <div className='product-list'>
                 {this.state.products.map(product => (
@@ -54,7 +56,7 @@ export default class Main extends Component {
                     </article>
                 ))}
                 <div className='actions'>
-                    <button onClick={this.prevPage}>Anterior</button>
+                    <button disable={page === 1} onClick={this.prevPage}>Anterior</button>
                     <button onClick={this.nextPage}>Próxima</button>
                 </div>
 
