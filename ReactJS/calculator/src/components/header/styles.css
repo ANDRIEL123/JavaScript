@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+}
+
+.main-header {
+    color: white;
+    background: rgb(78, 78, 78);
+    padding: 10px;
+}
