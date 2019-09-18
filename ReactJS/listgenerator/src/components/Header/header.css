@@ -1,0 +1,17 @@
+* {
+    background: none;
+}
+
+.main-header {
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    background: rgb(46, 41, 41);
+    font-size: 15px;
+}
+
+.main-header h2 {
+    background: rgb(46, 41, 41);
+}

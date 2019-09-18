@@ -1,0 +1,68 @@
+* {
+    background: lightgray;
+}
+
+.main {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.main .input {
+    padding: 30px;
+    font-size: 17px;
+    
+    margin-bottom: 20px;
+}
+
+.main .input input {
+    border: solid 1px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: white;
+}
+
+.main .input li {
+    font-size: 18px;
+    
+}
+
+.main .input button, input {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.main .main-btn {
+    margin-bottom: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .main-btn button {
+    padding: 10px;
+    background: rgb(255, 145, 0);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.main .main-li {
+    padding: 20px;
+    background: rgb(255, 187, 0);
+    border-radius: 10px;
+}
+
+
+.main .main-excluir {
+    padding: 10px;
+    background: rgb(255, 145, 0);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.main .main-li2 {
+    padding: 10px;
+}
